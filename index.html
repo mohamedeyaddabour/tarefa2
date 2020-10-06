@@ -1,0 +1,215 @@
+<!--  
+
+Tags
+
+  <style> </style> = para criar e nomear estilos e fontes, para facilitar o seu uso nas classes
+
+Classes 
+  
+  MAIORIA DOS NUMEROS PARA TAMANHOS (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 20, 24, 32, 40, 48, 56, 64)
+
+  antialiased = não deixar o texto pixelado
+  bg-cor-ton = cor de fundo
+  m-auto = espaçamento externo automática
+  px-n / py-n / p-n (n=numero) = espacamento interno X ou Y 
+  text-cor = cor do texto
+  text-tamanho = dar tamanho ao texto ( xs, sm, base,  md, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl )
+  font-( bold, italic,
+  flex = deixar lado a lado
+  items-( center, start, end ) =  deixar o item ( centralizado, começo(para a esquerda), fim(para a direita) )
+  jusitfy-( between, center, start, end ) = para justificar o texto ( entre, centro, começo(para a esquerda), fim(para a direita) )
+  
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toti Pizza</title>
+
+    <link rel="shortcut icon" href="img/pizza-full-4.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.7/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        @font-face {
+            font-family: HelloValentica;
+            src: url("font/font.ttf");
+        }
+        
+        .font-hello {
+            font-family: HelloValentica;
+        }
+        
+        #headerImg {
+            max-height: 800px;
+        }
+    </style>
+</head>
+
+<body class="antialiased bg-gray-300 m-auto mx-12 my-6 text-black">
+    <div class="shadow-2xl">
+        <div class="flex items-center justify-between px-6 py-2 w-full bg-white">
+            <h1 class="font-hello text-4xl font-bold text-black">
+                Toti Pizza
+            </h1>
+
+            <div class="flex text-center text-lg text-white font-bold space-x-10 items-center">
+                <a class="rounded-lg bg-teal-600 px-2 py-1" href="#sabores">Sabores</a>
+                <a class="rounded-lg bg-teal-600 px-2 py-1" href="#pizzas">Pizzas</a>
+                <a class="rounded-lg bg-teal-600 px-2 py-1" href="#sobre">Sobre</a>
+            </div>
+        </div>
+        <img id="headerImg" class="w-full" src="img/head.jpg" />
+        <div class="flex items-center justify-center bg-white space-x-8 -mt-32 p-6">
+            <div class="flex flex-col max-w-sm">
+                <img id="sabores" class="w-64" src="img/Pizza_2.png" />
+                <h1 class="text-2xl font-bold">
+                    Champignon Pizza
+                </h1>
+                <p class="text-md text-justify">
+                    Uma Pizza de cogumelos super deíciosa, com molho de tomate e pimentão vermelho. Compre agora a desfrute de seu sabor.
+                </p>
+            </div>
+            <div class="flex flex-col max-w-sm">
+                <img class="w-64" src="img/Pizza_4.png" />
+                <h1 class="text-2xl font-bold">
+                    Mistura Vegetal
+                </h1>
+                <p class="text-md text-justify">
+                    Uma Pizza de vegetariana, para aqueles que não são do time da carte, com azeitona preta, ervilha e mais alguns vegetais. Compre agora a desfrute de seu sabor.
+                </p>
+            </div>
+            <div class="flex flex-col max-w-sm">
+                <img class="w-64" src="img/Pizza_1.png" />
+                <h1 class="text-2xl font-bold">
+                    Muçarela
+                </h1>
+                <p class="text-md text-justify">
+                    Uma Pizza crocante de muçarela, com fatias de tomate por cima, uma pizza de dar água na boca. Compre agora a desfrute de seu sabor.
+                </p>
+            </div>
+            <div class="flex flex-col max-w-sm">
+                <img class="w-64" src="img/Pizza_3.png" />
+                <h1 class="text-2xl font-bold">
+                    Queijo Ralado
+                </h1>
+                <p class="text-md text-justify">
+                    Uma Pizza simples, de molho de tomate, com queijo ralado por cima, mas é de dar água na boca. Compre agora a desfrute de seu sabor.
+                </p>
+            </div>
+        </div>
+        <div class="bg-gray-400 p-12">
+            <div class="flex flex-col">
+                <h1 id="pizzas" class="font-hello text-center text-6xl">
+                    Pizzas
+                </h1>
+                <div class="flex flex-row space-x-16">
+                    <div class="flex items-center w-1/3">
+                        <img src="img/pizza-full-1.png" class="w-24 mr-4" />
+                        <div class="flex-col text-xl">
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Preço:</span> R$ 45
+                            </h3>
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Sabor:</span> Vegetais
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center w-1/3">
+                        <img src="img/pizza-full-2.png" class="w-24 mr-4" />
+                        <div class="flex-col text-xl">
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Preço:</span> R$ 53
+                            </h3>
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Sabor:</span> Peixe
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center w-1/3">
+                        <img src="img/pizza-full-4.png" class="w-24 mr-4" />
+                        <div class="flex-col text-xl">
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Preço:</span> R$ 48
+                            </h3>
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Sabor:</span> Peproni
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row space-x-16">
+                    <div class="flex items-center w-1/3">
+                        <img src="img/pizza-full-3.png" class="w-24 mr-4" />
+                        <div class="flex-col text-xl">
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Preço:</span> R$ 70
+                            </h3>
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Sabor:</span> Carne Moida
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center w-1/3">
+                        <img src="img/pizza-full-5.png" class="w-24 mr-4" />
+                        <div class="flex-col text-xl">
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Preço:</span> R$ 65
+                            </h3>
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Sabor:</span> Muçarela + Ervilha
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center w-1/3">
+                        <img src="img/pizza-full-6.png" class="w-24 mr-4" />
+                        <div class="flex-col text-xl">
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Preço:</span> R$ 50
+                            </h3>
+                            <h3 class="max-w-sm">
+                                <span class="font-bold">Sabor:</span> Muçarela + Ervilha + Azeitona
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-500 flex items-center justify-between p-12">
+            <div class="flex flex-col">
+                <h1 id="sobre" class="text-2xl font-bold">
+                    Sobre
+                </h1>
+                <p class="max-w-lg">
+                    <span class="font-bold">Toti Pizza</span>, um site criado por <span class="font-bold">Mohamed Dabour</span>, relacionado a Pizzas com o fim de aprimorar seu conhecimento.
+                </p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold">
+                    Toti...
+                </h1>
+                <div class="flex-col text-lg">
+                    <h3 class="max-w-sm">
+                        <a href="https://www.instagram.com/toti.diversidade/?hl=pt-br" class="underline">Acesse aqui o instagram da Toti.</a>
+                    </h3>
+                    <h3 class="max-w-sm">
+                        <a href="https://totidiversidade.com.br/" class="underline">Acesse aqui o site da Toti e saiba mais sobre nós.</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex text-white justify-center items-center h-24 bg-gray-600">
+            Direitos reservados para Toti Pizzaria.
+        </div>
+    </div>
+</body>
+
+</html>
